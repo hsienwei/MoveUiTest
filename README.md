@@ -3,3 +3,9 @@
 
 需自行放入ngui plugin
 
+
+
+NGUI主要是會多出LateBehaviorUpdate的消耗(UIPanel.LateUpdate)
+非world版本還會比world版本多出PhysicsFixedUpdate
+
+UGUI則是會有一個PostLateUpdate.PlayerUpdateCanvases的消耗, 不過沒有NGUI的消耗來得高
